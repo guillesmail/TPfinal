@@ -11,7 +11,7 @@ body{
 .fondosupoerior{
   background-color: darkmagenta;
  
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: center;
  
@@ -20,19 +20,23 @@ body{
 
 .fondoinferior{
 
-  width: 90%;
+  width: 95%;
   display: flex;
   justify-content: center;
-  background-color: rgb(245, 5, 245);
+  
+ 
 }
 
 
 .contenedor{
-  width: 90%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  
+  box-shadow: 0 50px 50px black;
+  
  
 }
 
@@ -41,7 +45,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90%;
+  width: 95%;
 }
 
 .sobremi{
@@ -67,68 +71,148 @@ body{
     width: 50%;
   }
 
+/* ===========  SERVICIOS ========== */
+
 .servicios{
  
   display: flex;
   align-self: stretch;
- 
+  
+  border: solid 2px black;
+  justify-content: space-around ;
+  background-color: rgb(50,50,50);
+    color: rgb(200, 200, 200);
+  
+  
   
 }
-
-.servicios-cajas{
-  background-color: rgb(50,50,50);
-    display: flex;
-    color: white;
+  .servicios-caja{
+    padding: 2rem;
+    text-align: center;
     
-  
   }
+  .servicios-caja p{
+ padding: 1rem;
+  }                                                                                              
+   
+  .servicios-caja h3{
+    padding: 1rem;
+     }   
+                                                                                          
+      
+  
+  
+
+
+/* ===========  TRABAJOS ========== */    
 
   .trabajos{
     background-color: rgb(255,255,255);
-    display: flex;
     align-self: stretch;
+    padding-left: 5rem;
+    
     
   }
-  
+
+    .trabajos-caja{
+      padding: 4rem 3rem 4rem 0rem;
+      color: rgb(100, 100, 100);
+      
+    }
+    .trabajos-caja h1{
+      padding: 0rem 1rem 0rem 1rem;
+      border-left: solid rgb(146,195,81);
+      font-weight: 200;
+      font-size: xx-large;
+      
+    }
+    .trabajos-caja p{
+      padding: 1rem 1rem 0rem 0rem;
+    }
+
+/* ===========GALERIA IMAGENES ========== */
+
 .galeria{
- 
-  
-  display: flex;
-  align-self: stretch;
-  background-color: beige;
-  
-  display: flex;
-  align-self: stretch;
+  display: flex; 
   justify-content: center;
   flex-wrap: wrap;
-  
 
 }
   
   .galeria img{
-    width: 250px;
-    
+   
+    width: 288px;
   }
     
    
 
 .footer{
-  background-color: beige;
+  
   display: flex;
-    align-self: stretch;
+  align-self: stretch;
   padding-bottom: 2rem;
-  height: 200px;
- 
+ /*  height: 250px; */
+  
 }
-
+ /* =====CAJA CONTACTO========= */
   .contacto{
     width: 30%;
     background-color: rgb(50,50,50);
+    color: rgb(200, 200, 200);
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+    
+
   }
+    .contacto h1{
+      /* padding: 0; */
+      padding-left: 1rem;
+      border-left: solid rgb(146,195,81);
+      font-weight: 200;
+      font-size: xx-large;
+    }
+
+    .contacto-datos{
+      padding-top: 1rem;
+      padding-bottom: 0.5rem;
+      font-style: italic;
+      font-weight: 200;
+      
+    }
+      .contacto p{
+        padding-bottom: 0.5rem;
+      }
+
+    .redes{
+      padding-top: 1rem;
+    }
+
+      .redes svg{
+    
+      }
+
+
+/* ============CAJA FORMULARIO ===========*/
   .formulario{
     width: 70%;
-    background-color: rgb(255,255,255);
+    background-color: rgb(230, 230, 230);
+    padding: 4rem;
   }
+  .formulario input{
+    padding: 1rem;
+  }
+.caja-btn{
+  padding-top: 2rem;
+}
+.formulario-btn{
+  padding: 1rem 4rem 1rem 4rem ;
+  
+  background-color:  rgb(50,50,50);
+  color: rgb(200, 200, 200);
+  border: none;
+  border-radius: 3%;
+}
   /*
   .hamburger {
     position: fixed;
