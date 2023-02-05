@@ -55,17 +55,19 @@ body{
   .hero-titulo{
   border: solid 3px rgb(126,198,123);
   text-transform: uppercase;
+  font-size: 1.5rem;
   
    padding: 1rem 0.5rem;
-   
+   margin-bottom: 1rem;
+  
+
   }
-  .hero-texto p{
-    padding: 0.5rem 1rem;
+  
     
-  }
+  
   .nav{
    display: flex;
-    border: solid 2px white;
+    /* border: solid 2px white; */
     /* position: absolute;
     top: 10%; */
     
@@ -80,13 +82,43 @@ body{
   }
 
   .logo{
-    border: solid 2px red;
+   border: solid 2px red;
     padding: 0.5rem 1rem;
     color: whitesmoke;
+    font-size: 1.5rem;
+    display: flex;
+
+    
+  
     
   }
+  .logo-nombre{
+
+    /* border-right: solid 1px green;
+    transform: rotate(-15deg);
+    transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
+    
+    margin-bottom: -5px;
+     */
+  }
+.logo-nombre p{
+  /* transform: rotate(15deg);
+ */
+}
+.logo-apellido{
+/*   border-left: solid 1px green;
+    transform: rotate(-15deg);
+    transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
+    
+    margin-top: -5px;
+    text-align: center  ;
+ */}
+.logo-apellido p{
+/*   transform: rotate(15deg);
+ */}
+  
   .menu{
-    border: solid 2px blueviolet;
+    /* border: solid 2px blueviolet; */
     padding: 0.5rem 1rem;
     color: whitesmoke;
   }
@@ -123,25 +155,64 @@ body{
 
 .sobremi{
   background-color: beige;
-
+  /* border: solid 2px green; */
   display: flex;
   align-self: stretch;
   height: 70vh;
  
   
 }
+/* ===========  CAJA IZQ TEXTO  ========== */
 
   .sobremi-texto{
     background-color: rgb(255,255,255);
-    color: black;
-    width: 50%;
+    color: rgb(100, 100, 100);
+    width: 60%;
+   /*  border: solid 2px blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 1rem 0rem 5rem;
   }
+    .sobremi-texto p{
+      padding-top: 0;
+    }
+    .sobremi-subtitulo{
+      padding: 1rem 1rem 0rem 0rem;
+    }
+    .sobremi-parrafo {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+
+  .sobremi-caja{
+   /*  padding: 0rem 1rem 0rem 1rem;
+      border-left: solid rgb(146,195,81);
+      font-weight: 100;
+      font-size: xx-large;
+      color: rgb(100, 100, 100);  */
+      /* padding: 3rem 3rem 0rem 0rem; */
+      
+
+  }
+    .sobremi-caja h1{
+      padding: 0rem 1rem 0rem 1rem;
+      border-left: solid rgb(146,195,81);
+      font-weight: 100;
+      font-size: xx-large;
+      text-transform: uppercase;
+    }
   .sobremi-btn{
-    background-color: chocolate;
+    /* background-color: chocolate; */
+    padding-top: 1rem;
   }
+
+  /* ===========  CAJA DER CARA  ========== */
+
   .sobremi-cara{
     background-color: rgb(255,255,255);
-    width: 50%;
+    width: 40%;
   }
 
 /* ===========  SERVICIOS ========== */
@@ -191,10 +262,11 @@ body{
       
     }
     .trabajos-caja h1{
-      padding: 0rem 1rem 0rem 1rem;
+      padding-left:  1rem;
       border-left: solid rgb(146,195,81);
       font-weight: 100;
       font-size: xx-large;
+      text-transform: uppercase;
       
     }
     .trabajos-caja p{
@@ -250,6 +322,7 @@ body{
       border-left: solid rgb(146,195,81);
       font-weight: 200;
       font-size: xx-large;
+      text-transform: uppercase;
     }
 
     .contacto-datos{
