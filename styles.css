@@ -1,7 +1,10 @@
+
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; 
 }
 
 body{
@@ -10,7 +13,7 @@ body{
   align-items: center;
 }
 .fondosupoerior{
-  /* background-color: darkmagenta; */
+ 
  
   width: 100%;
   display: flex;
@@ -48,7 +51,8 @@ body{
 .hero-texto{
  text-align: center;
  color: whitesmoke;
- 
+ /* font-family: 'Azeret Mono', monospace; */
+font-family: 'Roboto', sans-serif; 
  
 
 }
@@ -205,7 +209,12 @@ body{
     }
   .sobremi-btn{
     /* background-color: chocolate; */
-    padding-top: 1rem;
+    padding: 1rem 3rem;
+  
+    background-color:  rgb(50,50,50);
+    color: rgb(200, 200, 200);
+    border: none;
+    border-radius: 3%;
   }
 
   /* ===========  CAJA DER CARA  ========== */
@@ -237,12 +246,14 @@ body{
   }
                                                                                                
    
-  .servicios-caja h3{
-    padding: 0.5rem;
+  .servicios-caja h4{
+    padding: 0.5rem 0rem 2rem 0rem;
      }   
                                                                                           
       
-  
+     .servicios-caja p{
+      font-size: 0.7rem;
+       }  
   
 
 
