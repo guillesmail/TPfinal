@@ -61,8 +61,8 @@ font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   
-   padding: 1rem 0.5rem;
-   margin-bottom: 1rem;
+   padding: 1.5rem 1rem;
+   margin-bottom: 2rem;
   
 
   }
@@ -215,6 +215,7 @@ font-family: 'Roboto', sans-serif;
     color: rgb(200, 200, 200);
     border: none;
     border-radius: 3%;
+    width: 200px;
   }
 
   /* ===========  CAJA DER CARA  ========== */
@@ -305,82 +306,205 @@ font-family: 'Roboto', sans-serif;
     object-position: center;
     flex-grow: 1;
   }
-    
-   
+/*     --------FOOTER--------- */
+.contenedor-footer{
+  
+  height: 300px;
+  width: 100%;
+  display: flex;
+ 
 
-.footer{
+}
+/*     --------CAJA CONTACTO--------- */
+.contenedor-contacto{
+  
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+ background-color: rgb(50,50,50);
+ color: rgb(200, 200, 200);
+ padding-top: 3rem;
+ padding-left: 5rem;
+ padding-bottom: 1rem;
+
+
+}
+.contenedor-contacto h1{
+  
+  padding-left: 1rem;
+  border-left: solid rgb(146,195,81);
+  font-weight: 200;
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+
+.contacto-datos{
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: 200;
+ 
+  
+  
+}
+.contacto-datos p{
+  padding-bottom: 0.5rem;
+}
+
+.redes{
+padding-top: 1rem;
+}
+
+.redes svg{
+
+}
+
+/* --------sector FORMULARIO-------- */
+
+.contenedor-formulario{
+ 
+  /* width: 90%; */
+  display: flex;
+  /* border: solid black; */
+width: 60%
+
+}
+
+.form{
+
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+
+width: 100%;
+padding-top: 3rem;
+padding-left: 5rem;
+padding-bottom: 1rem;
+padding-right: 3rem;
+
+
+	
+ 
+}
+.contenedor-nombre{
+  
+  
+}
+.contenedor-nombre input{
+ 
+  /* width: 200px; */
+ /*  height: 30px; */
+ 
+  
+}
+.input-nombre{
+  width: 45%; 
+		height: 100%;
+		/* background: none;
+		color: #fff; */
+		padding-top: 20px;
+		border: none;
+		outline: 0px;
+}
+
+.input-email{
+  width: 45%; 
+  height: 100%;
+  /* background: none;
+  color: #fff; */
+  padding-top: 20px;
+  border: none;
+  outline: 0px;
+}
+
+.input-mensaje{
+  width: 100%;
+		height: 100%;
+		/* background: none;
+		color: #fff; */
+		padding-top: 20px;
+		border: none;
+		outline: 0px;
+}
+.contenedor-mensaje{
+
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  
+  padding-right: 3rem;
+ 
+  width: 90%;
+  
+
+ /*  height: 30px; */
+}
+ 
+
+
+
+/* .footer{
   
   display: flex;
   align-self: stretch;
  /*  padding-bottom: 2rem; */
  /*  height: 250px; */
   
-}
+
  /* =====CAJA CONTACTO========= */
-  .contacto{
+/*   .contacto{
     width: 30%;
-    background-color: rgb(50,50,50);
-    color: rgb(200, 200, 200);
-    padding-top: 3rem;
-    padding-left: 5rem;
-    padding-bottom: 1rem;
+  
     
 
   }
-    .contacto h1{
-      /* padding: 0; */
-      padding-left: 1rem;
-      border-left: solid rgb(146,195,81);
-      font-weight: 200;
-      font-size: xx-large;
-      text-transform: uppercase;
-    }
-
-    .contacto-datos{
-      padding-top: 1rem;
-      padding-bottom: 0.5rem;
-      font-style: italic;
-      font-weight: 200;
+   
       
-    }
-      .contacto p{
-        padding-bottom: 0.5rem;
-      }
-
-    .redes{
-      padding-top: 1rem;
-    }
-
-      .redes svg{
-    
-      }
-
-
+ */
+ 
 /* ============CAJA FORMULARIO ===========*/
-  .formulario{
+ /*  .formulario{
     width: 70%;
     background-color: rgb(230, 230, 230);
     padding: 3rem;
+    background-color: violet;
   }
 
   .formulario-nombre{
     display: flex;
+    background-color: aqua;
+    
    
   }
-    .formulario-nombre div{
-      
-    }
-    .caja-nombre{
-      
-    }
-    .caja-apellido{
-     
-    }
-
-  .formulario input{
-    padding: 1rem;
+  
+  .caja-nombre{
+    border: solid blue;
+    width: 50%;
+  
   }
-.caja-btn{
+  .caja-nombre input{
+    width: 100%;
+  }
+
+  .email{
+    border: solid green;
+  }
+
+  .mensaje{
+    border: solid red;
+  }
+     */
+
+  /* .formulario input{
+    padding: 1rem;
+  } */
+
+/* ============ BTN ENVIAR ===========*/ 
+
+/* .caja-btn{
   padding-top: 2rem;
 }
 .formulario-btn{
@@ -389,8 +513,28 @@ font-family: 'Roboto', sans-serif;
   background-color:  rgb(50,50,50);
   color: rgb(200, 200, 200);
   border: none;
-  border-radius: 3%;
+  border-radius: 3%; */
+
+
+/* -------FORMULARIO------- */
+/* 
+.form-contenedor{  
+  
+  display: flex;
+  flex-direction: column;
+
 }
+.nombremail{
+  border: solid pink;
+}
+#nombre{
+	border: solid black;
+  width: 50%;
+} */
+
+ 
+
+
   /*
   .hamburger {
     position: fixed;

@@ -1,3 +1,21 @@
+let formulario=document.getElementById('formulario')
+let nombre=document.getElementById('nombre')
+let divHTML=document.getElementById('div')
+
+
+const enviarformulario = (event) =>{
+event.preventDefault()
+ 
+console.log(event.target.nombre.value)
+
+
+
+}
+
+formulario.addEventListener('submit',enviarformulario)
+
+
+
 
 
 /* // selector

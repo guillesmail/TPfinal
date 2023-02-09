@@ -7,3 +7,8 @@ puse img galeria pero sin propiedades finales
 
 -diseño hero. definición de los sectión y sus diensiones para luego poner las anclas que se usan desde el menú.
 
+descarga iconos
+boton descarga cv
+desenfoque foto fondo usando photoshop
+
+footer. problemas contacto y formulario. 
