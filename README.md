@@ -12,3 +12,4 @@ boton descarga cv
 desenfoque foto fondo usando photoshop
 
 footer. problemas contacto y formulario. 
+menu hambueguesa terminado. faltan los links tipo anclas

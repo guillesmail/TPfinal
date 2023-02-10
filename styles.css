@@ -27,35 +27,36 @@ body{
   
 }
 
-
- 
 .hero{
-  /* background-color: aqua; */
+  
   display: flex;
   flex-direction: column;
-  
-  justify-content: center;
   width: 85%;
   height: 90%;
- 
   background: url(img/hero.jpg);
   background-size: cover;
   background-position: center;
-  /* height: 100vh; */
   align-items: center;
   align-self: flex-end;
- 
   
+}
+.menusuperior{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+
 }
 
 .hero-texto{
  text-align: center;
  color: whitesmoke;
- /* font-family: 'Azeret Mono', monospace; */
+
 font-family: 'Roboto', sans-serif; 
- 
+position: relative;
+bottom: -100px;
 
 }
+
   .hero-titulo{
   border: solid 3px rgb(126,198,123);
   text-transform: uppercase;
@@ -63,96 +64,134 @@ font-family: 'Roboto', sans-serif;
   
    padding: 1.5rem 1rem;
    margin-bottom: 2rem;
-  
+ 
 
   }
   
-    
-  
-  .nav{
-   display: flex;
-    /* border: solid 2px white; */
-    /* position: absolute;
-    top: 10%; */
-    
-    position: absolute;
-    top: 10%;
-    width: 80%;
-    justify-content: space-between;
-    
-
-
-    
-  }
-
-  .logo{
-   border: solid 2px red;
+/* -----------------LOGO NOMBRE --------------- */
+.logo{
+   
     padding: 0.5rem 1rem;
     color: whitesmoke;
-    font-size: 1.5rem;
+     text-transform: uppercase;
+  font-size: 1.5rem;
     display: flex;
-
-    
-  
-    
-  }
-  .logo-nombre{
-
-    /* border-right: solid 1px green;
-    transform: rotate(-15deg);
-    transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
-    
-    margin-bottom: -5px;
-     */
-  }
-.logo-nombre p{
-  /* transform: rotate(15deg);
- */
+   
 }
-.logo-apellido{
-/*   border-left: solid 1px green;
-    transform: rotate(-15deg);
-    transition: transform  0.1s cubic-bezier(0, 1.8, 1, 1.8);
-    
-    margin-top: -5px;
-    text-align: center  ;
- */}
-.logo-apellido p{
-/*   transform: rotate(15deg);
- */}
+
+.logo span{
+  font-size: 2.5rem;
+  color: rgb(126,198,123);
+}
+
+.logo p{
+  position: relative;
+  bottom: -12px;
+}
+.guille{
+  color: rgb(200, 200, 200);
+}
+.ojeda{
+
+}
+
+  /* ---------------MENU HAMBURGUESA-------------------- */
   
-  .menu{
-    /* border: solid 2px blueviolet; */
-    padding: 0.5rem 1rem;
-    color: whitesmoke;
+.hamburguesa{
+    width: 30px;
+    height: 40px;
+    padding-top: 7px;
+  	margin: 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    }
+  
+ 
+    .hamburguesa hr{
+      
+        margin-bottom: 4px;
+        border: 1.5px solid rgb(255,255,255);
+        border-radius: 5%;
+      
+    }
+
+
+li {
+    cursor: pointer;
+    
   }
+  
+  li:hover {
+    background-color: rgba(249, 253, 255,0.2);
+  }
+hr {
+    margin-bottom: 4px;
+    background-color: #fff;
+    border: 1.5px solid #fff;
+    border-radius: 1px;
+  }
+nav {
+   width: 100%;
+    margin-left: 0;
+    
+  }
+.nav-list {
+    list-style: none;
+    margin-left: none;
+    padding: 10px 0;
+    
+    
+  }
+a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+    padding: 1.5rem;
+    
+  }
+ 
+.desabilitado-hamb {
+    display: none;
+   
+
+  }
+.habilitado-hamb {
+    display: block;
+  }
+  
+
+ul{
+  display: flex;
+  justify-content: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
 
 
-.fondoinferior{
+/* --------------FONDO INFERIOR ------------- */
+
+.fondoinferior{ 
 
   width: 100%;
   display: flex;
   justify-content: center;
-  
-  
-
-  
- 
 }
 
 
 .contenedor{
+
   width: 85%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-color: blueviolet; */
+   background-color: blueviolet; 
   
   box-shadow: 0 50px 80px black;
   
  
 }
-
 
 /* ===========  SOBRE MI ========== */
 
@@ -191,12 +230,7 @@ font-family: 'Roboto', sans-serif;
 
 
   .sobremi-caja{
-   /*  padding: 0rem 1rem 0rem 1rem;
-      border-left: solid rgb(146,195,81);
-      font-weight: 100;
-      font-size: xx-large;
-      color: rgb(100, 100, 100);  */
-      /* padding: 3rem 3rem 0rem 0rem; */
+
       
 
   }
@@ -208,7 +242,7 @@ font-family: 'Roboto', sans-serif;
       text-transform: uppercase;
     }
   .sobremi-btn{
-    /* background-color: chocolate; */
+  
     padding: 1rem 3rem;
   
     background-color:  rgb(50,50,50);
@@ -232,7 +266,7 @@ font-family: 'Roboto', sans-serif;
   display: flex;
   align-self: stretch;
   
-  /* border: solid 2px black; */
+
   justify-content: space-around ;
   background-color: rgb(50,50,50);
   color: rgb(200, 200, 200);
@@ -365,20 +399,20 @@ padding-top: 1rem;
 
 .contenedor-formulario{
  
-  /* width: 90%; */
+
   display: flex;
-  /* border: solid black; */
+
 width: 60%
 
 }
 
 .form{
 
-  /* padding: 2rem; */
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+ 
 
 width: 100%;
 padding-top: 3rem;
@@ -390,22 +424,12 @@ padding-right: 3rem;
 	
  
 }
-.contenedor-nombre{
-  
-  
-}
-.contenedor-nombre input{
- 
-  /* width: 200px; */
- /*  height: 30px; */
- 
-  
-}
+
+
 .input-nombre{
   width: 45%; 
 		height: 100%;
-		/* background: none;
-		color: #fff; */
+	
 		padding-top: 20px;
 		border: none;
 		outline: 0px;
@@ -414,8 +438,7 @@ padding-right: 3rem;
 .input-email{
   width: 45%; 
   height: 100%;
-  /* background: none;
-  color: #fff; */
+ 
   padding-top: 20px;
   border: none;
   outline: 0px;
@@ -424,8 +447,7 @@ padding-right: 3rem;
 .input-mensaje{
   width: 100%;
 		height: 100%;
-		/* background: none;
-		color: #fff; */
+	
 		padding-top: 20px;
 		border: none;
 		outline: 0px;
@@ -440,199 +462,8 @@ padding-right: 3rem;
   width: 90%;
   
 
- /*  height: 30px; */
+ 
 }
  
 
 
-
-/* .footer{
-  
-  display: flex;
-  align-self: stretch;
- /*  padding-bottom: 2rem; */
- /*  height: 250px; */
-  
-
- /* =====CAJA CONTACTO========= */
-/*   .contacto{
-    width: 30%;
-  
-    
-
-  }
-   
-      
- */
- 
-/* ============CAJA FORMULARIO ===========*/
- /*  .formulario{
-    width: 70%;
-    background-color: rgb(230, 230, 230);
-    padding: 3rem;
-    background-color: violet;
-  }
-
-  .formulario-nombre{
-    display: flex;
-    background-color: aqua;
-    
-   
-  }
-  
-  .caja-nombre{
-    border: solid blue;
-    width: 50%;
-  
-  }
-  .caja-nombre input{
-    width: 100%;
-  }
-
-  .email{
-    border: solid green;
-  }
-
-  .mensaje{
-    border: solid red;
-  }
-     */
-
-  /* .formulario input{
-    padding: 1rem;
-  } */
-
-/* ============ BTN ENVIAR ===========*/ 
-
-/* .caja-btn{
-  padding-top: 2rem;
-}
-.formulario-btn{
-  padding: 1rem 4rem 1rem 4rem ;
-  
-  background-color:  rgb(50,50,50);
-  color: rgb(200, 200, 200);
-  border: none;
-  border-radius: 3%; */
-
-
-/* -------FORMULARIO------- */
-/* 
-.form-contenedor{  
-  
-  display: flex;
-  flex-direction: column;
-
-}
-.nombremail{
-  border: solid pink;
-}
-#nombre{
-	border: solid black;
-  width: 50%;
-} */
-
- 
-
-
-  /*
-  .hamburger {
-    position: fixed;
-    background-color: transparent;
-    right: 0;
-    top: 0;
-    height: 30px;
-    width: 30px;
-    padding: 20px 20px;
-   /*  -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: -webkit-transform 0.25s
-      cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition: transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    z-index: 1002;                                
-    cursor: pointer;
-/*     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;                                                          
-    user-select: none;
-  }                                                                                                                 
-  .hamburger.is-active {
-    background-color: none;
-  }
-  ._layer {
-    background: #333333;
-    margin-bottom: 4px;
-    border-radius: 2px;
-    width: 28px;
-    height: 4px;
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-    transition: all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
-  }
-  .hamburger:hover .-top {
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-  }
-  .hamburger:hover .-bottom {
-    -webkit-transform: translateY(50%);
-    -ms-transform: translateY(100%);
-    transform: translateY(100%);
-  }
-  .hamburger.is-active .-top {
-    -webkit-transform: translateY(200%) rotate(45deg) !important;
-    -ms-transform: translateY(200%) rotate(45deg) !important;
-    transform: translateY(200%) rotate(45deg) !important;
-  }
-  .hamburger.is-active .-mid {
-    opacity: 0;
-  }
-  .hamburger.is-active .-bottom {
-    -webkit-transform: translateY(-200%) rotate(135deg) !important;
-    -ms-transform: translateY(-200%) rotate(135deg) !important;
-    transform: translateY(-200%) rotate(135deg) !important;
-  }
-  
-  .menuppal.is_active {
-    transform: translate3d(0px, 0px, 0px);
-  }
-  .menuppal {
-    background-color: rgba(255, 255, 255, 0.95);
-    bottom: 0;
-    height: 100%;
-    left: 0;
-    overflow-y: scroll;
-    position: fixed;
-    top: 0;
-    transform: translate3d(0px, -100%, 0px);
-    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
-    width: 100%;
-    z-index: 1001;
-  }
-  .menuppal ul {
-    margin: 0;
-    padding: 0;
-  }
-  .menuppal ul li {
-    list-style: none; 
-     text-align: center;
-    font-family: Verdadna, Arial, Helvetica;
-    color: $nav-color-text;
-    font-size: 1rem;
-    line-height: 2em;
-    height: 3em;
-    color: #369;
-    text-transform: none;
-    font-weight: bold;
-  }
-  .menuppal ul li a {
-    text-decoration: none;
-    color: #369;
-  }
-  .menuppal ul li a:hover {
-    text-decoration: none;
-    color: #333;
-  }
-    */

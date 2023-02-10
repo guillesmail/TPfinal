@@ -1,4 +1,4 @@
-let formulario=document.getElementById('formulario')
+/* let formulario=document.getElementById('formulario')
 let nombre=document.getElementById('nombre')
 let divHTML=document.getElementById('div')
 
@@ -12,30 +12,30 @@ console.log(event.target.nombre.value)
 
 }
 
-formulario.addEventListener('submit',enviarformulario)
+formulario.addEventListener('submit',enviarformulario) */
 
+/* --------HAMBURGUESA--------------------- */
 
+const button = document.getElementById("btn-hamburguesa"); // traigo boton
 
+function mostrarMenu() {
+	let menu = document.getElementById("estado-menu"); 
+	if(menu.classList.contains("desabilitado-hamb")){
 
-
-/* // selector
-var menu = document.querySelector(".hamburger");
-
-// method
-function toggleMenu(event) {
-  this.classList.toggle("is-active");
-  document.querySelector(".menuppal").classList.toggle("is_active");
-  event.preventDefault();
+		menu.classList.remove("desabilitado-hamb");
+		menu.classList.add("habilitado-hamb");
+	} else {
+		menu.classList.remove("habilitado-hamb");
+		menu.classList.add("desabilitado-hamb");
+	}
 }
 
-// event
-menu.addEventListener("click", toggleMenu, false); */
+button.addEventListener("click", mostrarMenu);  //escuha y llama funcion
 
-//Solución con jQUery
-/*$(document).ready(function(){
-	$('.hamburger').click(function() {
-		$('.hamburger').toggleClass('is-active');
-		$('.menuresponsive').toggleClass('is-active');
-		return false;
-	});
-});*/
+var navList = document.getElementsByClassName("nav-list");
+for(var i=0; i< navList.length; i++){
+	navList[i].addEventListener("click", showMenu);
+}
+
+/* -------- FIN HAMBURGUESA--------------------- */
+
