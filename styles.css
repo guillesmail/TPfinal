@@ -186,7 +186,7 @@ ul{
   display: flex;
   flex-direction: column;
   align-items: center;
-   background-color: blueviolet; 
+/*    background-color: blueviolet;  */
   
   box-shadow: 0 50px 80px black;
   
@@ -350,6 +350,8 @@ ul{
 
 }
 /*     --------CAJA CONTACTO--------- */
+
+
 .contenedor-contacto{
   
   width: 40%;
@@ -397,36 +399,56 @@ padding-top: 1rem;
 
 /* --------sector FORMULARIO-------- */
 
-.contenedor-formulario{
- 
 
-  display: flex;
-
-width: 60%
-
-}
+/* ----------------------------------------------------------- */
 
 .form{
-
-
   display: flex;
   flex-direction: column;
+ 
+  width: 60%;
+  align-items: flex-start;
   justify-content: center;
- 
+ padding-left: 4rem;
+ padding-right: 1rem;
 
-width: 100%;
-padding-top: 3rem;
-padding-left: 5rem;
-padding-bottom: 1rem;
-padding-right: 3rem;
-
-
-	
- 
 }
 
+.datosinput{
+  width: 90%;
+  
+  margin: 1rem 0;
+}
 
-.input-nombre{
+.datosinput input{
+  width: 49%;
+  height: 30px;
+  border: none;
+	border-bottom: 2px solid #0f0f0f;
+  pointer-events: none;
+   
+	
+}
+
+.inputmsj{
+  width: 90%;
+  height: 50px;
+  border-bottom: 1px solid #0f0f0f;
+  border: none;
+  
+  
+}
+
+.btnEnviar{
+  padding: 1rem 3rem;
+  
+  background-color:  rgb(50,50,50);
+  color: rgb(200, 200, 200);
+  border: none;
+  border-radius: 3%;
+  width: 200px;
+}
+/* .labelNombre{
   width: 45%; 
 		height: 100%;
 	
@@ -463,7 +485,7 @@ padding-right: 3rem;
   
 
  
-}
+} */
  
 
 
