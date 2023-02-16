@@ -13,3 +13,6 @@ desenfoque foto fondo usando photoshop
 
 footer. problemas contacto y formulario. 
 menu hambueguesa terminado. faltan los links tipo anclas
+
+- finalizado el responsive. Finalizado html, css.
+Queda poner mi img o avatar
