@@ -1,20 +1,5 @@
-/* let formulario=document.getElementById('formulario')
-let nombre=document.getElementById('nombre')
-let divHTML=document.getElementById('div')
 
-
-const enviarformulario = (event) =>{
-event.preventDefault()
- 
-console.log(event.target.nombre.value)
-
-
-
-}
-
-formulario.addEventListener('submit',enviarformulario) */
-
-/* --------HAMBURGUESA--------------------- */
+/* --------Menu--------------------- */
 
 const button = document.getElementById("btn-hamburguesa"); // traigo boton
 
@@ -32,10 +17,14 @@ function mostrarMenu() {
 
 button.addEventListener("click", mostrarMenu);  //escuha y llama funcion
 
-var navList = document.getElementsByClassName("nav-list");
+var navList = document.getElementsByClassName("nav-lista");
 for(var i=0; i< navList.length; i++){
 	navList[i].addEventListener("click", showMenu);
 }
 
-/* -------- FIN HAMBURGUESA--------------------- */
+/* -------- FIN Menu--------------------- */
+
+
+
+
 
