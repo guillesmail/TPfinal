@@ -2,8 +2,10 @@
    padding: 0;
   margin: 0; 
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;  
+   scroll-behavior: smooth;
 }
+
 
 :root {
   --miNegro: rgb(50,50,50);
@@ -18,6 +20,7 @@ body{
   align-items: center;
  
 }
+/* //////////////////// */
 .fondosupoerior{
  
   width: 100%;

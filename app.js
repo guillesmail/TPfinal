@@ -17,10 +17,10 @@ function mostrarMenu() {
 
 button.addEventListener("click", mostrarMenu);  //escuha y llama funcion
 
-var navList = document.getElementsByClassName("nav-lista");
+/* var navList = document.getElementsByClassName("nav-lista");
 for(var i=0; i< navList.length; i++){
 	navList[i].addEventListener("click", showMenu);
-}
+} */
 
 /* -------- FIN Menu--------------------- */
 
